@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-color: #fead53;
+  --text-dark: #333333;
+  --text-light: #ffffff33;
+  --extra-light: #f3f4f6;
+
+
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("treavell.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+a {
+  text-decoration: none;
+  font-family: cursive;
+  color: #f3f4f6;
+  font-size: 1.2rem;
+  margin-left: 7rem;
+}
+
+
+nav {
+  /* text-decoration: none; */
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  color: #f3f4f6;
+  animation: slidetop 1s ease forwards;
+  animation-delay: .1s;
+}
+
+ul {
+  display: flex;
+  gap: 4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* padding: 2rem; */
+}
+ul:hover{
+  border-bottom: 2px solid var(--extra-light);
+}
+
+.search {
+  margin-right: 4rem;
+  font-size: 1.2rem;
+  border-bottom: 2px solid var(--extra-light);
+  cursor: pointer;
+}
+    @keyframes slideright{
+      0%{
+          transform: translateX(-200px);
+          opacity:0;
+      }
+      100%{
+          transform: translateX(0px);
+          opacity:1;
+      }
+}
+
+
+.search input {
+  color: var(--extra-ligh);
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.search i {
+  color: var(--extra-light);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.box-container {
+  display: flex;
+  min-height: 100vh;
+  margin: auto;
+  padding: 2rem;
+  padding-top: 100px;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 3rem;
+
+}
+.box-left.box-right{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.box-left .content {
+  max-width: 400px;
+  display: grid;
+  gap: 1rem;
+  margin-left: 5rem;
+  animation:slideright 1s ease forwards;
+  animation-delay: .1s;
+  cursor: pointer;
+  /* color: #f3f4f6; */
+
+}
+.content h1{
+  font-size: 4rem;
+  line-height: 4rem;
+  color: var(--extra-light);
+  font-weight: 700;
+}
+.content p{
+  color:var(--extra-light);
+}
+.btn{
+  display: flex;
+  gap:1rem;
+}
+.btns{
+  display: flex;
+  gap:1rem;
+}
+.btns button{
+  padding: 0.5rem 2rem;
+  color:var(--extra-light);
+  outline:none;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid var(--extra-light);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+ .read-more {
+  color:var(--text-dark)
+  /* background-color:var(--extra-light); */
+}
+.read-more:hover{
+  /* background-color:var(--extra-light);  */
+  background-color: var(--text-light);
+}
+.our-blogs:hover{
+  background-color: var(--text-light);
+}
+form{
+  width: 350px;
+  display: grid;
+  border-radius: 5px;
+  background-color: var(--text-light);
+  color:var(--extra-light);
+  margin-right: 5rem;
+  animation:slideright 1s ease forwards;
+  animation-delay: .1s;
+  cursor: pointer;
+
+}
+form h1{
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding:2rem;
+
+}
+.form-info{
+  display: grid;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+.form-info input{
+  padding: .5rem;
+  font-size:1rem ;
+  color:var(--extra-light);
+  background-color:transparent;
+  outline:none;
+  border:none;
+  border-bottom:2px solid var(--extra-light);
+}
+
+form button{
+  margin-top:1rem;
+  padding:1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  outline:none;
+  border:none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color:var(--extra-light);
+  cursor: pointer;
+}
+form button:hover{
+  background-color: #efb879;
+}
+@keyframes slideright{
+  0%{
+      transform: translateX(-200px);
+      opacity:0;
+  }
+  100%{
+      transform: translateX(0px);
+      opacity:1;
+  }
+}
+@keyframes slidetop{
+  0%{
+      transform: translateY(-100px);
+      opacity:0;
+  }
+  100%{
+      transform: translateY(-0px);
+      opacity:1;
+  }
+}
+::selection{
+  background-color: rgb(18, 20, 20);
+  color: aqua;
+}
